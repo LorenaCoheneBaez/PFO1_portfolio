@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page de mi portafolio Personal (HTML y CSS)</title>
+    <link rel="icon" href="./img/logo.png" />
+    <link rel="apple-touch-icon" href="./img/logo192.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="body">
+    <!-- Como mejora general me gustaría agregar la opción de modo oscuro al proyecto -->
+    <header id="header" class="header-container">
+
+        <nav>
+            <ul class="nav">
+                <li><img src="./img/logo.png" alt="Logo" class="logo-pic"></li>
+                <li><a href="#sobre-mi" class="nav-item">Sobre mí</a></li>
+                <li><a href="#tarjetas" class="nav-item">Proyectos</a></li>
+                <li><a href="#habilidades" class="nav-item">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-item">Contacto</a></li>
+                <li><a href="#peliculas" class="nav-item">Películas favoritas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <h1 class="title">Bienvenid@ a mi portafolio</h1>
+            <h2 class="subtitle">¡Hola! Soy Lorena</->
+        </section>
+        <section id="sobre-mi">
+            <h2 class="section-title title">Sobre mí</h2>
+            <div class="section-about">
+                <img src="./img/yo_img.png" alt="Foto de perfil" class="profile-pic" />
+                <div class="about-text-container">
+                    <p class="text">
+                        Soy desarrolladora de software en formación cursando el 2° año en
+                        el Instituto de Formación Técnica Superior N° 29.
+                    </p>
+                    <p class="text">
+                        Me gusta crear apps web que funcionen bien y se vean lindas.
+                    </p>
+                    <p class="text">
+                        Disfruto aprender, resolver problemas y meter mano en el código
+                        todo lo posible.
+                    </p>
+                    <p class="text">
+                        Mi misión: seguir creciendo, sumar experiencia y construir cosas
+                        que realmente sirvan.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="tarjetas">
+            <!-- Sección de proyectos, a futuro quiero incluir enlaces a los mismos -->
+            <h2 class="section-title title">Proyectos</h2>
+            <div class="pictures-list">
+                <div class="card">
+                    <img src="./img/proyects/clinica.png" alt="Clinica" class="card-img">
+                    <h3 class="subtitle">Clinica SePrice</h3>
+                    <p class="text">Prototipo realizado en Figma.</p>
+                </div>
+                <div class="card">
+                    <img src="./img/proyects/club-deportivo.png" alt="Club deportivo" class="card-img">
+                    <h3 class="subtitle">Club deportivo</h3>
+                    <p class="text">Proyecto realizado con Kotlin.</p>
+                </div>
+                <div class="card">
+                    <img src="./img/proyects/las-yerberas-poster.jpeg" alt="Las Yerberas" class="card-img">
+                    <h3 class="subtitle">Las Yerberas</h3>
+                    <p class="text">Proyecto realizado con React.</p>
+                </div>
+                <div class="card">
+                    <img src="./img/proyects/leaf-poster.jpeg" alt="LEAF Librería" class="card-img">
+                    <h3 class="subtitle">LEAF Librería</h3>
+                    <p class="text">Proyecto realizado con express.</p>
+                </div>
+            </div>
+        </section>
+        <section id="habilidades">
+            <!-- Sección de habilidades, a futuro quiero agregar alguna animación o información extra -->
+            <h2 class="section-title title">Habilidades</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>React native</li>
+                <li>Kotlin</li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2 class="section-title title">Contacto</h2>
+            <form action="">
+                <div class="form-container">
+                    <div class="form-item">
+                        <label for="name" class="text">Nombre:</label>
+                        <input type="text" id="name" name="name" required autocomplete="name" />
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email" class="text">E-mail:</label>
+                        <input type="email" id="email" name="email" required autocomplete="email" />
+                    </div>
+
+                    <div class="form-item">
+                        <label for="tel" class="text">Teléfono:</label>
+                        <input type="tel" id="tel" name="tel" required autocomplete="tel" />
+                    </div>
+
+                    <div class="form-item">
+                        <label for="message" class="text">Mensaje:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
+                </div>
+                <!-- Sección de contacto, a futuro quiero agregar alguna animación o modal que de aviso de que se envió el formulario -->
+                <button type="submit" class="button">Enviar</button>
+            </form>
+        </section>
+        <section id="peliculas">
+            <!-- Sección de películas favoritas, quiero mejorar la experiencia, tal vez dando acceso a los trailers o la posibilidad de ver información adicional -->
+            <h2 class="section-title title">
+                Películas favoritas
+            </h2>
+            <ul class="pictures-list">
+                <li class="card">
+                    <img src="./img/pictures/batman.jpg" alt="Batman Begins">
+                    <h3 class="subtitle">Batman Begins</h3>
+                    </img>
+                    <p class="text">Después de entrenar con su mentor, Batman comienza su lucha para liberar a Gotham
+                        City de la corrupción.</p>
+                </li>
+                <li class="card">
+                    <img src="./img/pictures/your-name.jpg" alt="Your name">
+                    <h3 class="subtitle">Your name</h3>
+                    </img>
+                    <p class="text">Dos extraños se encuentran vinculados de una manera extraña, pero, cuando se forma
+                        una conexión, ¿será la distancia lo único que los mantendrá separados?</p>
+                </li>
+                <li class="card">
+                    <img src="./img/pictures/titanic.jpg" alt="Titanic">
+                    <h3 class="subtitle">Titanic</h3>
+                    </img>
+                    <p class="text">Una joven de la aristocracia se enamora de un chico pobre pero de buen corazón a
+                        bordo del lujoso Titanic.</p>
+                </li>
+                <li class="card">
+                    <img src="./img/pictures/el-origen.jpg" alt="El origen">
+                    <h3 class="subtitle">El origen</h3>
+                    </img>
+                    <p class="text">A un ladrón que roba secretos corporativos a través de la tecnología de entrar en el
+                        subconsciente, se le da la tarea de implantar una idea en la mente del jefe de una gran empresa.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul>
+            <li>
+                Te invito a visitar mis redes sociales
+                <a href="https://github.com/LorenaCoheneBaez" target="_blank" rel="noopener noreferrer"
+                    class="footer-link">
+                    <img class="github-icon" src="./img/github-150.png" alt="GitHub" width="30" height="30" />
+                </a>
+
+            </li>
+            <li>
+                Instituto de Formación Técnica Superior N° 29
+            </li>
+            <li>Desarrollo de Sistemas Web (Front End) - 2°D- 2026</li>
+            <li class="back-item">
+                <a href="#header" class="back">Volver</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
