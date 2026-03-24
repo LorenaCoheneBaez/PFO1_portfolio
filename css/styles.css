@@ -73,6 +73,8 @@ html,
     flex-wrap: wrap;
     width: 100%;
     gap: 1.875rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .about-text-container {
