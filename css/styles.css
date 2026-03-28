@@ -156,6 +156,7 @@ section {
 .skills-list-item {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-family: Roboto mono;
 }
 
 .form-container {
