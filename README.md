@@ -44,7 +44,7 @@ Este Trabajo Práctico es un sitio web de presentación personal que muestra mi 
 
 ### 💻 URL del proyecto en vercel
 
-<a href="https://portfoliopersonallorena.vercel.app/" target="_blank" data-bs-toggle="tooltip" title="(https://portfoliopersonallorena.vercel.app/)">Portfolio personal</a>
+<a href="https://portfoliopersonallorena.vercel.app/" target="_blank" rel="noopener noreferrer" data-bs-toggle="tooltip" title="(https://portfoliopersonallorena.vercel.app/)">Portfolio personal</a>
 
 
 ## 🔠 Uso de Google Fonts
