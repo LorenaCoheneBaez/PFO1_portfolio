@@ -109,6 +109,11 @@ section {
     text-align: justify;
 }
 
+.highlight{
+    font-weight: bold;
+    color: #7B3FE4;
+}
+
 .card-img-picture-height {
     max-height: 18.75rem;
 }
